@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<title>Zeyad Mansour</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+<link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body {
+    font-family: 'Karla';font-size: 22px;
+}
+
+.blue button {
+  background-color: #33AFFF; /* Shade of Blue for About Me*/
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-family: 'Karla';font-size: 22px;
+}
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+
+.orange button {
+  background-color: #FFD500; /* Shade of Orange for Projects */
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-family: 'Karla';font-size: 22px;
+}
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+
+.green button {
+  background-color: #7AF93F; /* Shade of Green for Aspirations */
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+  font-family: 'Karla';font-size: 22px;
+}
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  font-family: 'Karla';font-size: 20px;
+
+}
+
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+<link rel="manifest" href="favicon_io/site.webmanifest">
+
+</style>
+</head>
+<body>
+
+	<h1 align="center">Zeyad Mansour</h1>
+          <p align="center">I'm Zeyad Mansour, an 8th-grade student at Memorial Middle School in Mentor, Ohio.</p>
+
+
+<div class="blue">
+  <button class="tablinks" onclick="openCity(event, 'About Me')" id="defaultOpen">About Me</button>
+</div>
+
+<div class="orange">
+<button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
+</div>
+<div class="green">
+  <button class="tablinks" onclick="openCity(event, 'Aspirations')">Aspirations</button>
+</div>
+
+
+
+
+<div id="About Me" class="tabcontent">
+  <h3>About Me</h3>
+  <p>Lorem ipsum. about</p>
+</div>
+
+<div id="Projects" class="tabcontent">
+  <h3>Projects</h3>
+  <p>Lorem ipsum. project</p>
+</div>
+
+<div id="Aspirations" class="tabcontent">
+  <h3>Aspirations</h3>
+  <p>Lorem ipsum. aspire</p>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
+
+
+
+<div class="footer">
+<p>Find me on Github/Twitter</p>
+
+ <a href="https://github.com/zeyad-mansour"> <i class="fa fa-github"></i></a>
+<a href="https://twitter.com/zeyad_sour"> <i class="fa fa-twitter"></i></a>
+</div>
+
+</body>
+</html>
